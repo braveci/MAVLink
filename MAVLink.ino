@@ -4,5 +4,8 @@ void setup() {
 }
 
 void loop() {
- 
+ if(Serial.available()){
+    int var = Serial.read();
+    Serial.println(var);
+  }
 }
